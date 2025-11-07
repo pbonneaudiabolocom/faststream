@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 2
 requires-python = ">=3.10"
 resolution-markers = [
     "python_full_version >= '3.13'",
@@ -397,6 +397,7 @@ wheels = [
 name = "confluent-kafka"
 version = "2.12.1"
 source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d5/d6/10799cbc9ad757170eb466eaadfaf2abde1d832b6d67d7ff040179888272/confluent_kafka-2.12.1.tar.gz", hash = "sha256:cfc4ceeb3071a678f7c93cfe1e76216442e1621ee6192584cdf704db1d619894", size = 250074, upload-time = "2025-11-04T19:03:31.969Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c9/ad/0d2b906aece9069fc0bead3bd7907a440442209ee3795954359555a51b91/confluent_kafka-2.12.1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:418f52c52c3833a2481cb4f576f4bee5183776dd9411f5288286117d794d858c", size = 3593667, upload-time = "2025-10-21T20:49:58.317Z" },
     { url = "https://files.pythonhosted.org/packages/c4/ae/27220c24f96b5cb7d69b01035e3ebe1fc6d6cde54e8d9e6e69a6fd8fcd69/confluent_kafka-2.12.1-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:6308da6a1feddfc8a5ab757982ab546c4482e33c056e7b4f379deeddfd821c0c", size = 3153382, upload-time = "2025-10-21T20:50:01.627Z" },
@@ -732,7 +733,7 @@ pydantic = [
 
 [[package]]
 name = "fastapi"
-version = "0.120.0"
+version = "0.121.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "annotated-doc" },
@@ -740,14 +741,14 @@ dependencies = [
     { name = "starlette" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f7/0e/7f29e8f7219e4526747db182e1afb5a4b6abc3201768fb38d81fa2536241/fastapi-0.120.0.tar.gz", hash = "sha256:6ce2c1cfb7000ac14ffd8ddb2bc12e62d023a36c20ec3710d09d8e36fab177a0", size = 337603, upload-time = "2025-10-23T20:56:34.743Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8c/e3/77a2df0946703973b9905fd0cde6172c15e0781984320123b4f5079e7113/fastapi-0.121.0.tar.gz", hash = "sha256:06663356a0b1ee93e875bbf05a31fb22314f5bed455afaaad2b2dad7f26e98fa", size = 342412, upload-time = "2025-11-03T10:25:54.818Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1d/60/7a639ceaba54aec4e1d5676498c568abc654b95762d456095b6cb529b1ca/fastapi-0.120.0-py3-none-any.whl", hash = "sha256:84009182e530c47648da2f07eb380b44b69889a4acfd9e9035ee4605c5cfc469", size = 108243, upload-time = "2025-10-23T20:56:33.281Z" },
+    { url = "https://files.pythonhosted.org/packages/dd/2c/42277afc1ba1a18f8358561eee40785d27becab8f80a1f945c0a3051c6eb/fastapi-0.121.0-py3-none-any.whl", hash = "sha256:8bdf1b15a55f4e4b0d6201033da9109ea15632cb76cf156e7b8b4019f2172106", size = 109183, upload-time = "2025-11-03T10:25:53.27Z" },
 ]
 
 [[package]]
 name = "faststream"
-version = "0.6.2"
+version = "0.6.3"
 source = { editable = "." }
 dependencies = [
     { name = "anyio" },
@@ -925,7 +926,7 @@ dev = [
     { name = "detect-secrets", specifier = "==1.5.0" },
     { name = "dirty-equals", specifier = "==0.10.0" },
     { name = "email-validator", specifier = "==2.3.0" },
-    { name = "fastapi", specifier = "==0.120.0" },
+    { name = "fastapi", specifier = "==0.121.0" },
     { name = "faststream", extras = ["rabbit", "kafka", "confluent", "nats", "redis", "otel", "cli", "prometheus"] },
     { name = "httpx", specifier = "==0.28.1" },
     { name = "mdx-include", specifier = "==1.4.2" },
@@ -1013,7 +1014,7 @@ testing = [
     { name = "covdefaults", specifier = ">=2.3.0" },
     { name = "dirty-equals", specifier = "==0.10.0" },
     { name = "email-validator", specifier = "==2.3.0" },
-    { name = "fastapi", specifier = "==0.120.0" },
+    { name = "fastapi", specifier = "==0.121.0" },
     { name = "httpx", specifier = "==0.28.1" },
     { name = "msgspec" },
     { name = "opentelemetry-sdk", specifier = ">=1.24.0,<2.0.0" },
