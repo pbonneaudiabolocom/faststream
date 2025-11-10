@@ -219,7 +219,7 @@ class _StreamHandlerMixin(LogicSubscriber):
 
         await super().start(read)
 
-    async def _get_one_message(self, timeout: float) -> None:
+    async def _get_one_message(self, timeout: float) -> Optional[ReadResponse]:
         if self.stream_sub.group and self.stream_sub.consumer:
             def _readgroup_call() -> Awaitable[ReadResponse]:
                 return self._client.xreadgroup(
@@ -274,6 +274,8 @@ class _StreamHandlerMixin(LogicSubscriber):
                 stream=self.stream_sub,
             )
             stream_message = await protected_autoclaim()
+            if not stream_message:
+                return None
 
             (next_id, messages, _) = stream_message
             # Update start_id for next call
